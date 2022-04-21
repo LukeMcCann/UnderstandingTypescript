@@ -83,3 +83,13 @@ const t = new TestClass();
 
 console.log(TestClass.elementId);
 </pre>
+
+# Method Decorators
+
+The method decorator allows us to add metadata to certain ````functions````.
+`````Method Decorators```` are defined similaryly by creating a ````function````.
+Unlike the class decorator the method decorator expects three ````arguments````.
+
+The first argument is the target, this is the current prototype object.
+In this case it is the prototype chain of our test object.
+The second argument is the ```propertyKey```, this is a simple ```string``` that represents the name of the function. Finally, we have a ````propertyDescriptor```` which simply describes the method.
